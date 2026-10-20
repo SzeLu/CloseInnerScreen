@@ -8,67 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		A72BAACF2232B1EB00FC61F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BAACE2232B1EB00FC61F5 /* AppDelegate.m */; };
-		A72BAAD22232B1EB00FC61F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BAAD12232B1EB00FC61F5 /* ViewController.m */; };
 		A72BAAD42232B1ED00FC61F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A72BAAD32232B1ED00FC61F5 /* Assets.xcassets */; };
-		A72BAAD72232B1ED00FC61F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72BAAD52232B1ED00FC61F5 /* Main.storyboard */; };
+		803A5BB88E22424FBC957602 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8B88DA2C87548689D97CDB6 /* Localizable.strings */; };
 		A72BAADA2232B1ED00FC61F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BAAD92232B1ED00FC61F5 /* main.m */; };
-		A72BAAE52232B1ED00FC61F5 /* CloseInnerScreenAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BAAE42232B1ED00FC61F5 /* CloseInnerScreenAppTests.m */; };
-		A72BAAF02232B1ED00FC61F5 /* CloseInnerScreenAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A72BAAEF2232B1ED00FC61F5 /* CloseInnerScreenAppUITests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A72BAAE12232B1ED00FC61F5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A72BAAA22232B03700FC61F5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A72BAACA2232B1EB00FC61F5;
-			remoteInfo = CloseInnerScreenApp;
-		};
-		A72BAAEC2232B1ED00FC61F5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A72BAAA22232B03700FC61F5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A72BAACA2232B1EB00FC61F5;
-			remoteInfo = CloseInnerScreenApp;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A72BAACB2232B1EB00FC61F5 /* CloseInnerScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloseInnerScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A72BAACD2232B1EB00FC61F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A72BAACE2232B1EB00FC61F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A72BAAD02232B1EB00FC61F5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A72BAAD12232B1EB00FC61F5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A72BAAD32232B1ED00FC61F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A72BAAD62232B1ED00FC61F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1DDA7BA5DEC440D1BC7F7249 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2B03B81610D04194A4336AAB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		A72BAAD82232B1ED00FC61F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A72BAAD92232B1ED00FC61F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A72BAADB2232B1ED00FC61F5 /* CloseInnerScreenApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloseInnerScreenApp.entitlements; sourceTree = "<group>"; };
-		A72BAAE02232B1ED00FC61F5 /* CloseInnerScreenAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloseInnerScreenAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A72BAAE42232B1ED00FC61F5 /* CloseInnerScreenAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloseInnerScreenAppTests.m; sourceTree = "<group>"; };
-		A72BAAE62232B1ED00FC61F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A72BAAEB2232B1ED00FC61F5 /* CloseInnerScreenAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloseInnerScreenAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A72BAAEF2232B1ED00FC61F5 /* CloseInnerScreenAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloseInnerScreenAppUITests.m; sourceTree = "<group>"; };
-		A72BAAF12232B1ED00FC61F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A786F3212233905800456D14 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A72BAAC82232B1EB00FC61F5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A72BAADD2232B1ED00FC61F5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A72BAAE82232B1ED00FC61F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -83,8 +41,6 @@
 			children = (
 				A786F3212233905800456D14 /* README.md */,
 				A72BAACC2232B1EB00FC61F5 /* CloseInnerScreenApp */,
-				A72BAAE32232B1ED00FC61F5 /* CloseInnerScreenAppTests */,
-				A72BAAEE2232B1ED00FC61F5 /* CloseInnerScreenAppUITests */,
 				A72BAAAC2232B03700FC61F5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,8 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				A72BAACB2232B1EB00FC61F5 /* CloseInnerScreen.app */,
-				A72BAAE02232B1ED00FC61F5 /* CloseInnerScreenAppTests.xctest */,
-				A72BAAEB2232B1ED00FC61F5 /* CloseInnerScreenAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,33 +58,12 @@
 			children = (
 				A72BAACD2232B1EB00FC61F5 /* AppDelegate.h */,
 				A72BAACE2232B1EB00FC61F5 /* AppDelegate.m */,
-				A72BAAD02232B1EB00FC61F5 /* ViewController.h */,
-				A72BAAD12232B1EB00FC61F5 /* ViewController.m */,
 				A72BAAD32232B1ED00FC61F5 /* Assets.xcassets */,
-				A72BAAD52232B1ED00FC61F5 /* Main.storyboard */,
+				B8B88DA2C87548689D97CDB6 /* Localizable.strings */,
 				A72BAAD82232B1ED00FC61F5 /* Info.plist */,
 				A72BAAD92232B1ED00FC61F5 /* main.m */,
-				A72BAADB2232B1ED00FC61F5 /* CloseInnerScreenApp.entitlements */,
 			);
 			path = CloseInnerScreenApp;
-			sourceTree = "<group>";
-		};
-		A72BAAE32232B1ED00FC61F5 /* CloseInnerScreenAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				A72BAAE42232B1ED00FC61F5 /* CloseInnerScreenAppTests.m */,
-				A72BAAE62232B1ED00FC61F5 /* Info.plist */,
-			);
-			path = CloseInnerScreenAppTests;
-			sourceTree = "<group>";
-		};
-		A72BAAEE2232B1ED00FC61F5 /* CloseInnerScreenAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A72BAAEF2232B1ED00FC61F5 /* CloseInnerScreenAppUITests.m */,
-				A72BAAF12232B1ED00FC61F5 /* Info.plist */,
-			);
-			path = CloseInnerScreenAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,42 +86,6 @@
 			productReference = A72BAACB2232B1EB00FC61F5 /* CloseInnerScreen.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A72BAADF2232B1ED00FC61F5 /* CloseInnerScreenAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A72BAAF52232B1ED00FC61F5 /* Build configuration list for PBXNativeTarget "CloseInnerScreenAppTests" */;
-			buildPhases = (
-				A72BAADC2232B1ED00FC61F5 /* Sources */,
-				A72BAADD2232B1ED00FC61F5 /* Frameworks */,
-				A72BAADE2232B1ED00FC61F5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A72BAAE22232B1ED00FC61F5 /* PBXTargetDependency */,
-			);
-			name = CloseInnerScreenAppTests;
-			productName = CloseInnerScreenAppTests;
-			productReference = A72BAAE02232B1ED00FC61F5 /* CloseInnerScreenAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A72BAAEA2232B1ED00FC61F5 /* CloseInnerScreenAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A72BAAF82232B1ED00FC61F5 /* Build configuration list for PBXNativeTarget "CloseInnerScreenAppUITests" */;
-			buildPhases = (
-				A72BAAE72232B1ED00FC61F5 /* Sources */,
-				A72BAAE82232B1ED00FC61F5 /* Frameworks */,
-				A72BAAE92232B1ED00FC61F5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A72BAAED2232B1ED00FC61F5 /* PBXTargetDependency */,
-			);
-			name = CloseInnerScreenAppUITests;
-			productName = CloseInnerScreenAppUITests;
-			productReference = A72BAAEB2232B1ED00FC61F5 /* CloseInnerScreenAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,14 +98,6 @@
 					A72BAACA2232B1EB00FC61F5 = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					A72BAADF2232B1ED00FC61F5 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = A72BAACA2232B1EB00FC61F5;
-					};
-					A72BAAEA2232B1ED00FC61F5 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = A72BAACA2232B1EB00FC61F5;
-					};
 				};
 			};
 			buildConfigurationList = A72BAAA52232B03700FC61F5 /* Build configuration list for PBXProject "CloseInnerScreen" */;
@@ -218,6 +107,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = A72BAAA12232B03700FC61F5;
 			productRefGroup = A72BAAAC2232B03700FC61F5 /* Products */;
@@ -225,8 +115,6 @@
 			projectRoot = "";
 			targets = (
 				A72BAACA2232B1EB00FC61F5 /* CloseInnerScreen */,
-				A72BAADF2232B1ED00FC61F5 /* CloseInnerScreenAppTests */,
-				A72BAAEA2232B1ED00FC61F5 /* CloseInnerScreenAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -237,21 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A72BAAD42232B1ED00FC61F5 /* Assets.xcassets in Resources */,
-				A72BAAD72232B1ED00FC61F5 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A72BAADE2232B1ED00FC61F5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A72BAAE92232B1ED00FC61F5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				803A5BB88E22424FBC957602 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,50 +136,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A72BAAD22232B1EB00FC61F5 /* ViewController.m in Sources */,
 				A72BAADA2232B1ED00FC61F5 /* main.m in Sources */,
 				A72BAACF2232B1EB00FC61F5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A72BAADC2232B1ED00FC61F5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A72BAAE52232B1ED00FC61F5 /* CloseInnerScreenAppTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A72BAAE72232B1ED00FC61F5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A72BAAF02232B1ED00FC61F5 /* CloseInnerScreenAppUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		A72BAAE22232B1ED00FC61F5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A72BAACA2232B1EB00FC61F5 /* CloseInnerScreen */;
-			targetProxy = A72BAAE12232B1ED00FC61F5 /* PBXContainerItemProxy */;
-		};
-		A72BAAED2232B1ED00FC61F5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A72BAACA2232B1EB00FC61F5 /* CloseInnerScreen */;
-			targetProxy = A72BAAEC2232B1ED00FC61F5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		A72BAAD52232B1ED00FC61F5 /* Main.storyboard */ = {
+		B8B88DA2C87548689D97CDB6 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A72BAAD62232B1ED00FC61F5 /* Base */,
+				1DDA7BA5DEC440D1BC7F7249 /* en */,
+				2B03B81610D04194A4336AAB /* zh-Hans */,
 			);
-			name = Main.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -362,7 +207,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -415,7 +260,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -426,7 +271,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CloseInnerScreenApp/CloseInnerScreenApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CloseInnerScreenApp/Info.plist;
@@ -443,7 +287,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CloseInnerScreenApp/CloseInnerScreenApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CloseInnerScreenApp/Info.plist;
@@ -453,76 +296,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.yaha.CloseInnerScreenApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		A72BAAF62232B1ED00FC61F5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = CloseInnerScreenAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.yaha.CloseInnerScreenAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloseInnerScreenApp.app/Contents/MacOS/CloseInnerScreenApp";
-			};
-			name = Debug;
-		};
-		A72BAAF72232B1ED00FC61F5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = CloseInnerScreenAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.yaha.CloseInnerScreenAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloseInnerScreenApp.app/Contents/MacOS/CloseInnerScreenApp";
-			};
-			name = Release;
-		};
-		A72BAAF92232B1ED00FC61F5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = CloseInnerScreenAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.yaha.CloseInnerScreenAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = CloseInnerScreenApp;
-			};
-			name = Debug;
-		};
-		A72BAAFA2232B1ED00FC61F5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = CloseInnerScreenAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.yaha.CloseInnerScreenAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = CloseInnerScreenApp;
 			};
 			name = Release;
 		};
@@ -543,24 +316,6 @@
 			buildConfigurations = (
 				A72BAAF32232B1ED00FC61F5 /* Debug */,
 				A72BAAF42232B1ED00FC61F5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A72BAAF52232B1ED00FC61F5 /* Build configuration list for PBXNativeTarget "CloseInnerScreenAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A72BAAF62232B1ED00FC61F5 /* Debug */,
-				A72BAAF72232B1ED00FC61F5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A72BAAF82232B1ED00FC61F5 /* Build configuration list for PBXNativeTarget "CloseInnerScreenAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A72BAAF92232B1ED00FC61F5 /* Debug */,
-				A72BAAFA2232B1ED00FC61F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
