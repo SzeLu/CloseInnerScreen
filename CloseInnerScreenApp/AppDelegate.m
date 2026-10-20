@@ -114,8 +114,8 @@ static void displayReconfigCallback(CGDirectDisplayID display,
     }
 
     if ([self isBuiltinActive]) {
-        // 关闭内建屏：没有外接显示器时禁止，否则全黑无法操作
-        if (![self hasExternalDisplay]) {
+        // 关闭内建屏：至少要有一台物理连接的外接显示器，否则全黑无法操作
+        if ([self attachedDisplayCount] <= 1) {
             [self showAlert:@"无法关闭内建显示器"
                         msg:@"未连接外接显示器，关闭内建屏会导致全黑，已取消操作。"];
             return;
@@ -151,18 +151,18 @@ static void displayReconfigCallback(CGDirectDisplayID display,
 
 // MARK: - 安全对账
 
-// 统一的状态校正：显示配置变化、唤醒后都会走到这里
+// 统一的状态校正：显示配置变化（插拔/启用/禁用）、唤醒后都会走到这里
 - (void)enforceSafety {
     if (![self lidIsOpen]) return;   // 物理合盖期间显示器归系统管理，不插手
 
     BOOL builtinActive = [self isBuiltinActive];
-    BOOL external = [self hasExternalDisplay];
+    NSUInteger attachedCount = [self attachedDisplayCount];
 
-    if (!builtinActive && !external) {
-        // 外接没了而内建屏仍关着 -> 全黑风险，立即恢复
+    if (!builtinActive && attachedCount <= 1) {
+        // 物理连接只剩内建屏一台而它仍关着 -> 全黑风险，立即恢复
         [self setBuiltinDisplayEnabled:YES];
         self.intentDisabled = NO;
-    } else if (self.intentDisabled && builtinActive && external) {
+    } else if (self.intentDisabled && builtinActive && attachedCount > 1) {
         // 用户意图是关，但系统又把它点亮了（如唤醒丢状态）-> 重新关闭
         [self setBuiltinDisplayEnabled:NO];
     }
@@ -227,14 +227,14 @@ static void displayReconfigCallback(CGDirectDisplayID display,
     return builtin != 0 && CGDisplayIsActive(builtin);
 }
 
-- (BOOL)hasExternalDisplay {
-    CGDirectDisplayID ids[16];
+// 物理连接的显示器数量（含被禁用/休眠的）；CGSGetDisplayList 缺失时退回在线列表
+- (NSUInteger)attachedDisplayCount {
     uint32_t count = 0;
-    if (CGGetOnlineDisplayList(16, ids, &count) != kCGErrorSuccess) return NO;
-    for (uint32_t i = 0; i < count; i++) {
-        if (!CGDisplayIsBuiltin(ids[i])) return YES;
+    if (sGetDisplayList) {
+        if (sGetDisplayList(0, NULL, &count) == kCGErrorSuccess) return count;
     }
-    return NO;
+    if (CGGetOnlineDisplayList(0, NULL, &count) != kCGErrorSuccess) return 0;
+    return count;
 }
 
 // 物理盖子是否打开。读不到状态时按"打开"处理：
