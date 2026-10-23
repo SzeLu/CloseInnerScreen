@@ -1,12 +1,10 @@
-#  关闭自带显示器
+# 功能
+在连接外部显示器的前提下, 允许关闭 MacBook 内置显示器
 
-这个是我自己,用mac 电脑 + 外置显示器的时候, 需要关闭mac自带的显示器用的软件
+# 原始项目地址
+https://github.com/yyyreal/CloseInnerScreen
 
-![示例](./demo.png)
-
-
-## 使用方法
-
-下载 [CloseInnerScreen.dmg](https://github.com/ruandao/CloseInnerScreen/releases) , 双击打开, 然后拖放到 /Application(应用程序) 目录就可以使用了
-
-
+# 二开
+原始项目并不能真正关闭内置显示器, 采用了亮度调节的方案. 不符合我的需求.
+已通过 AI 修改为真正关闭内置显示器.
+在 MacBook Pro M5 上测试可用, 并一直在用.
